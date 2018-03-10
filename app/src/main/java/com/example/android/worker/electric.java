@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class electric extends AppCompatActivity {
@@ -52,7 +53,8 @@ public class electric extends AppCompatActivity {
             int pos = rv.indexOfChild(v);
             workman send = electricworker.get(pos);
                 Intent i = new Intent(electric.this,Profile.class);
-
+                i.putExtra("wor", (Serializable) send);
+                startActivity(i);
             }
         });
     }
