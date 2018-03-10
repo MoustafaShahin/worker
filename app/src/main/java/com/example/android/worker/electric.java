@@ -1,5 +1,6 @@
 package com.example.android.worker;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -50,6 +51,8 @@ public class electric extends AppCompatActivity {
             public void onClick(View v) {
             int pos = rv.indexOfChild(v);
             workman send = electricworker.get(pos);
+                Intent i = new Intent(electric.this,Profile.class);
+
             }
         });
     }

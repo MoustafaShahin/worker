@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".category" />
-        <activity android:name=".electric"></activity>
+        <activity android:name=".electric" />
+        <activity android:name=".Profile"></activity>
     </application>
 
 </manifest>
