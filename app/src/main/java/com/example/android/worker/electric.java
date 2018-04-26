@@ -53,6 +53,7 @@ public class electric extends AppCompatActivity {
             int pos = rv.indexOfChild(v);
             workman send = electricworker.get(pos);
                 Intent i = new Intent(electric.this,Profile.class);
+                //send worker info
                 i.putExtra("wor", (Serializable) send);
                 startActivity(i);
             }
