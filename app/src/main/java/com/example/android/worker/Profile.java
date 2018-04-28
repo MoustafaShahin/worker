@@ -13,7 +13,6 @@ public class Profile extends AppCompatActivity {
         // get worker info
         workman rec = (workman) getIntent().getSerializableExtra("wor");
 
-        TextView nametex = (TextView)findViewById(R.id.nametext);
-        TextView proftex = (TextView)findViewById(R.id.proftext);
+
     }
 }

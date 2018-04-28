@@ -12,11 +12,15 @@ android:orientation="vertical"
     android:layout_height="wrap_content"
     android:paddingBottom="16dp"
     android:layout_weight="1">
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/select"
         />
+    </android.support.v7.widget.CardView>
 </LinearLayout>
     <LinearLayout
         android:padding="16dp"
@@ -33,21 +37,31 @@ android:orientation="vertical"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="2">
-<ImageButton
-    android:layout_weight="1"
-    android:background="@drawable/wrench"
-    android:id="@+id/mechanic"
-    android:layout_height="wrap_content"
+<android.support.v7.widget.CardView
     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:layout_margin="5dp"
-    />
+    android:layout_weight="1">
+    <ImageButton
+               android:id="@+id/mechanic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wrench"
+        />
+</android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1">
         <ImageButton
-            android:layout_weight="1"
+
             android:background="@drawable/carpen"
             android:id="@+id/carpenter"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:layout_margin="5dp"/>
+            />
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 
 
@@ -57,22 +71,29 @@ android:orientation="vertical"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="2">
-        <ImageButton
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:layout_weight="1"
+            android:layout_weight="1">
+        <ImageButton
             android:background="@drawable/plum"
             android:id="@+id/plumber"
             android:layout_height="match_parent"
             android:layout_width="match_parent"/>
-        <ImageButton
-            android:layout_margin="5dp"
+    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
             android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+        <ImageButton
             android:background="@drawable/elec"
             android:id="@+id/elect"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"/>
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 
 </LinearLayout>
-
 </LinearLayout>
