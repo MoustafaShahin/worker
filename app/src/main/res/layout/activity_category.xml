@@ -150,7 +150,15 @@
             fab_size="mini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_lock_white_24dp" />
+            android:src="@drawable/ic_person_white_24dp" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item2"
+            fab_label="add job"
+            fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fab_add" />
 
     </com.github.clans.fab.FloatingActionMenu>
 
